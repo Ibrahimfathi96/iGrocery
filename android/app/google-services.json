@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "291678775965",
+    "project_id": "igrocery-f0241",
+    "storage_bucket": "igrocery-f0241.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291678775965:android:bb9be60c511262482c8274",
+        "android_client_info": {
+          "package_name": "com.ibmf.i_grocery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZnPDKbYnSk1oP_EZHaFuNd5oJxtFAHuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
