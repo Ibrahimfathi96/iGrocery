@@ -7,4 +7,5 @@ class AppAssets {
   static const String googleLogo = "assets/images/google_logo.png";
   static const String carrotImg = "assets/images/carrot.png";
   static const String locationImg = "assets/images/location.png";
+  static const String logoIconImg = "assets/images/logo_ic.png";
 }
