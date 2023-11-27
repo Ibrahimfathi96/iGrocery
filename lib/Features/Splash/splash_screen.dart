@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void navigateAfterThreeSeconds() {
-    Future.delayed(const Duration(seconds: 3)).then(
+    Future.delayed(const Duration(seconds: 1000)).then(
       (value) {
         navigate(
           context: context,
@@ -34,35 +34,40 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     var width = MediaQuery.sizeOf(context).width;
     return Scaffold(
-      backgroundColor: AppColors.primaryColor,
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SvgPicture.asset(AppAssets.splashLogo),
-          SizedBox(width: width / 40),
-          const Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "iGrocery",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 36,
-                ),
-              ),
-              Text(
-                "online groceries",
-                style: TextStyle(
-                  letterSpacing: 2,
-                  color: Colors.white,
-                  fontSize: 16,
-                ),
-              ),
-            ],
+        backgroundColor: AppColors.primaryColor,
+        body: Center(
+          child: Image.asset(
+            AppAssets.logoIconImg,
           ),
-        ],
-      ),
-    );
+        )
+        //     Row(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //     SvgPicture.asset(AppAssets.splashLogo),
+        //     SizedBox(width: width / 40),
+        //     const Column(
+        //       mainAxisAlignment: MainAxisAlignment.center,
+        //       children: [
+        //         Text(
+        //           "iGrocery",
+        //           style: TextStyle(
+        //             color: Colors.white,
+        //             fontWeight: FontWeight.bold,
+        //             fontSize: 36,
+        //           ),
+        //         ),
+        //         Text(
+        //           "online groceries",
+        //           style: TextStyle(
+        //             letterSpacing: 2,
+        //             color: Colors.white,
+        //             fontSize: 16,
+        //           ),
+        //         ),
+        //       ],
+        //     ),
+        //   ],
+        // ),
+        );
   }
 }
