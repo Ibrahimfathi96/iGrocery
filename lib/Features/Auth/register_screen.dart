@@ -3,6 +3,7 @@ import 'package:i_grocery/Core/Routes/routes.dart';
 import 'package:i_grocery/Core/Utils/app_assets.dart';
 import 'package:i_grocery/Core/Utils/app_colors.dart';
 import 'package:i_grocery/Core/Utils/common.dart';
+import 'package:i_grocery/Core/Utils/extensions.dart';
 import 'package:i_grocery/Core/Widgets/custom_button.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -20,7 +21,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     var height = MediaQuery.sizeOf(context).height;
     var width = MediaQuery.sizeOf(context).width;
     return Scaffold(
-      body: Column(
+      body: ListView(
         children: [
           Stack(
             clipBehavior: Clip.none,
@@ -84,7 +85,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   width: width * 0.85,
                   child: TextFormField(
                     decoration: const InputDecoration(
-                      hintText: "enter your username",
+                      hintText: "Joe Smith",
                       border: UnderlineInputBorder(
                         borderSide: BorderSide(
                           color: Colors.black87,
@@ -150,15 +151,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           });
                         },
                         icon: Icon(
-                          isSecured == true
-                              ? Icons.visibility_off
-                              : Icons.remove_red_eye,
+                          isSecured == false
+                              ? Icons.remove_red_eye
+                              : Icons.visibility_off,
                           color: isSecured == true
-                              ? AppColors.greyColor
-                              : AppColors.primaryColor,
+                              ? AppColors.primaryColor
+                              : AppColors.greyColor,
                         ),
                       ),
-                      hintText: "Password",
+                      hintText: "************",
                       border: const UnderlineInputBorder(
                         borderSide: BorderSide(
                           color: Colors.black87,
@@ -172,20 +173,20 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   "By creating & continuing you're agreeing with our",
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
-                    fontSize: 16,
+                    fontSize: 15,
                   ),
                 ),
                 const Text(
                   "Terms of Service and Privacy Policy.",
                   style: TextStyle(
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w600,
                     color: AppColors.primaryColor,
                     fontSize: 16,
                   ),
                 ),
                 const SizedBox(height: 30),
                 CustomButton(
-                  onPressed: () {},
+                  onPressed: () => context.pushNamed(Routes.location),
                   btnText: "Sign Up",
                 ),
                 const SizedBox(height: 20),

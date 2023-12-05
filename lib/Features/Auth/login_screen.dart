@@ -13,7 +13,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  bool isSecured = false;
+  bool isSecured = true;
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.sizeOf(context).height;
@@ -114,15 +114,15 @@ class _LoginScreenState extends State<LoginScreen> {
                             });
                           },
                           icon: Icon(
-                            isSecured == true
-                                ? Icons.visibility_off
-                                : Icons.remove_red_eye,
+                            isSecured == false
+                                ? Icons.remove_red_eye
+                                : Icons.visibility_off,
                             color: isSecured == true
-                                ? AppColors.greyColor
-                                : AppColors.primaryColor,
+                                ? AppColors.primaryColor
+                                : AppColors.greyColor,
                           ),
                         ),
-                        hintText: "Strong Password",
+                        hintText: "***********",
                         border: const UnderlineInputBorder(
                           borderSide: BorderSide(
                             color: Colors.black87,

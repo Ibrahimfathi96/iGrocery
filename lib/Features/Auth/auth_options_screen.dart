@@ -3,6 +3,7 @@ import 'package:i_grocery/Core/Routes/routes.dart';
 import 'package:i_grocery/Core/Utils/app_assets.dart';
 import 'package:i_grocery/Core/Utils/app_colors.dart';
 import 'package:i_grocery/Core/Utils/common.dart';
+import 'package:i_grocery/Core/Utils/extensions.dart';
 import 'package:i_grocery/Core/Widgets/custom_social_button.dart';
 
 class AuthOptionsScreen extends StatefulWidget {
@@ -52,10 +53,7 @@ class _AuthOptionsScreenState extends State<AuthOptionsScreen> {
                       child: Padding(
                         padding: const EdgeInsets.only(right: 8.0),
                         child: CustomAuthButton(
-                          onPressed: () => navigate(
-                            context: context,
-                            routeName: Routes.login,
-                          ),
+                          onPressed: () => context.pushNamed(Routes.login),
                           backgroundColor: AppColors.primaryColor,
                           widget: const SizedBox.shrink(),
                           btnText: "Sign in",
@@ -66,10 +64,7 @@ class _AuthOptionsScreenState extends State<AuthOptionsScreen> {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 8.0),
                         child: CustomAuthButton(
-                          onPressed: () => navigate(
-                            context: context,
-                            routeName: Routes.register,
-                          ),
+                          onPressed: () => context.pushNamed(Routes.register),
                           backgroundColor: AppColors.primaryColor,
                           widget: const SizedBox.shrink(),
                           btnText: "Sign up",
@@ -80,12 +75,12 @@ class _AuthOptionsScreenState extends State<AuthOptionsScreen> {
                 ),
                 SizedBox(height: height / 60),
                 CustomAuthButton(
-                  onPressed: () => navigate(
-                    context: context,
-                    routeName: Routes.sendCode,
-                  ),
+                  onPressed: () => context.pushNamed(Routes.sendCode),
                   backgroundColor: AppColors.primaryColor,
-                  widget: const Icon(Icons.phone_android),
+                  widget: const Icon(
+                    Icons.phone_android,
+                    color: Colors.white,
+                  ),
                   btnText: "Continue with your Phone Number",
                 ),
                 SizedBox(height: height / 40),
@@ -95,9 +90,9 @@ class _AuthOptionsScreenState extends State<AuthOptionsScreen> {
                 ),
                 SizedBox(height: height / 40),
                 CustomAuthButton(
-                  onPressed: () {},
+                  onPressed: () => context.pushNamed(Routes.home),
                   btnText: "Continue with Google",
-                  backgroundColor: const Color(0xff1877f2),
+                  backgroundColor: Colors.red,
                   widget: Image.asset(
                     AppAssets.googleLogo,
                     width: 30,
@@ -106,7 +101,7 @@ class _AuthOptionsScreenState extends State<AuthOptionsScreen> {
                 ),
                 SizedBox(height: height / 40),
                 CustomAuthButton(
-                  onPressed: () {},
+                  onPressed: () => context.pushNamed(Routes.home),
                   btnText: "Continue with Facebook",
                   backgroundColor: const Color(0xff1877f2),
                   widget: Image.asset(

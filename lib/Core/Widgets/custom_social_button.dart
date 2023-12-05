@@ -35,6 +35,7 @@ class CustomAuthButton extends StatelessWidget {
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
+                  color: Colors.white,
                 ),
                 textAlign: TextAlign.center,
               ),

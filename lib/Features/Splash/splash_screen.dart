@@ -3,6 +3,7 @@ import 'package:i_grocery/Core/Routes/routes.dart';
 import 'package:i_grocery/Core/Utils/app_assets.dart';
 import 'package:i_grocery/Core/Utils/app_colors.dart';
 import 'package:i_grocery/Core/Utils/common.dart';
+import 'package:i_grocery/Core/Utils/extensions.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -19,12 +20,9 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void navigateAfterThreeSeconds() {
-    Future.delayed(const Duration(seconds: 1000)).then(
+    Future.delayed(const Duration(seconds: 3)).then(
       (value) {
-        navigate(
-          context: context,
-          routeName: Routes.welcome,
-        );
+        context.pushNamed(Routes.welcome);
       },
     );
   }
@@ -32,11 +30,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: AppColors.primaryColor,
-        body: Center(
-          child: Image.asset(
-            AppAssets.logoIconImg,
-          ),
-        ));
+      backgroundColor: AppColors.primaryColor,
+      body: Center(
+        child: Image.asset(
+          AppAssets.logoIconImg,
+        ),
+      ),
+    );
   }
 }
