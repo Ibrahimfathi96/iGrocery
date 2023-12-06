@@ -4,7 +4,7 @@ import 'package:i_grocery/Features/Auth/otp_code_screen.dart';
 import 'package:i_grocery/Features/Auth/register_screen.dart';
 import 'package:i_grocery/Features/Auth/send_code_screen.dart';
 import 'package:i_grocery/Features/Auth/auth_options_screen.dart';
-import 'package:i_grocery/Features/Home/home_screen.dart';
+import 'package:i_grocery/Features/Home/ui/home_screen.dart';
 import 'package:i_grocery/Features/Location/location_screen.dart';
 import 'package:i_grocery/Features/Splash/splash_screen.dart';
 import 'package:i_grocery/Features/Welcome/welcome_screen.dart';
