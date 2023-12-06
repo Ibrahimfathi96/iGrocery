@@ -69,7 +69,7 @@ class _SendCodeScreenState extends State<SendCodeScreen> {
                   const Text(
                     "Mobile Number",
                     style: TextStyle(
-                      color: AppColors.greyColor,
+                      color: AppColors.grey,
                       fontWeight: FontWeight.w600,
                     ),
                   ),

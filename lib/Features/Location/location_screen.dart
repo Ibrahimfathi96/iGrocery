@@ -68,7 +68,7 @@ class LocationScreen extends StatelessWidget {
                       "Your Zone",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: AppColors.greyColor,
+                        color: AppColors.grey,
                         fontSize: 20,
                       ),
                     ),
@@ -90,7 +90,7 @@ class LocationScreen extends StatelessWidget {
                       "Your Area",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: AppColors.greyColor,
+                        color: AppColors.grey,
                         fontSize: 20,
                       ),
                     ),

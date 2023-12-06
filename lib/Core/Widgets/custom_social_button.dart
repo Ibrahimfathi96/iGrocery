@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomAuthButton extends StatelessWidget {
   final Color backgroundColor;
@@ -32,8 +33,8 @@ class CustomAuthButton extends StatelessWidget {
             Expanded(
               child: Text(
                 btnText,
-                style: const TextStyle(
-                  fontSize: 16,
+                style: TextStyle(
+                  fontSize: 16.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.white,
                 ),

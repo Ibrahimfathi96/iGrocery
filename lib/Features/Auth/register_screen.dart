@@ -68,7 +68,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   "Enter your Credentials to continue",
                   style: TextStyle(
                     fontSize: 16,
-                    color: AppColors.greyColor,
+                    color: AppColors.grey,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -77,7 +77,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   "Username",
                   style: TextStyle(
                     fontSize: 16,
-                    color: AppColors.greyColor,
+                    color: AppColors.grey,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -99,7 +99,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   "Email Address",
                   style: TextStyle(
                     fontSize: 16,
-                    color: AppColors.greyColor,
+                    color: AppColors.grey,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -118,7 +118,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           size: 32,
                           color: emailValid == true
                               ? AppColors.primaryColor
-                              : AppColors.greyColor,
+                              : AppColors.grey,
                         ),
                       ),
                       hintText: "example@example.com",
@@ -135,7 +135,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   "Password",
                   style: TextStyle(
                     fontSize: 16,
-                    color: AppColors.greyColor,
+                    color: AppColors.grey,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -156,7 +156,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               : Icons.visibility_off,
                           color: isSecured == true
                               ? AppColors.primaryColor
-                              : AppColors.greyColor,
+                              : AppColors.grey,
                         ),
                       ),
                       hintText: "************",

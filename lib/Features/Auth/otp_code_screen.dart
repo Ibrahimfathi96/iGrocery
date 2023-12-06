@@ -59,7 +59,7 @@ class OTPCodeScreen extends StatelessWidget {
                   const Text(
                     "Code",
                     style: TextStyle(
-                      color: AppColors.greyColor,
+                      color: AppColors.grey,
                       fontWeight: FontWeight.w600,
                     ),
                   ),

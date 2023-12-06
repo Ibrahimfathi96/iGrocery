@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:i_grocery/Core/Utils/app_colors.dart';
 
 class CustomButton extends StatelessWidget {
@@ -26,8 +27,8 @@ class CustomButton extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           btnText,
-          style: const TextStyle(
-            fontSize: 22,
+          style: TextStyle(
+            fontSize: 22.sp,
             color: Colors.white,
           ),
         ),

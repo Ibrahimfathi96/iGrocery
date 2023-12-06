@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     "Enter your email and password",
                     style: TextStyle(
                       fontSize: 16,
-                      color: AppColors.greyColor,
+                      color: AppColors.grey,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     "Email Address",
                     style: TextStyle(
                       fontSize: 16,
-                      color: AppColors.greyColor,
+                      color: AppColors.grey,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -98,7 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     "Password",
                     style: TextStyle(
                       fontSize: 16,
-                      color: AppColors.greyColor,
+                      color: AppColors.grey,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -119,7 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 : Icons.visibility_off,
                             color: isSecured == true
                                 ? AppColors.primaryColor
-                                : AppColors.greyColor,
+                                : AppColors.grey,
                           ),
                         ),
                         hintText: "***********",

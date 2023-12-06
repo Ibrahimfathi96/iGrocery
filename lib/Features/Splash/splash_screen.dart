@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:i_grocery/Core/Routes/routes.dart';
 import 'package:i_grocery/Core/Utils/app_assets.dart';
 import 'package:i_grocery/Core/Utils/app_colors.dart';
-import 'package:i_grocery/Core/Utils/common.dart';
 import 'package:i_grocery/Core/Utils/extensions.dart';
 
 class SplashScreen extends StatefulWidget {
